@@ -1,4 +1,4 @@
-# University of Mirpur — Course Selection & Advising
+# University Management System
 
 Java 17 / Spring Boot application. The existing feature folders and controller → service → repository structure are preserved.
 
