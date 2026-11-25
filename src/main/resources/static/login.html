@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>University of Mirpur: Course Selection & Advising System</title>
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <main class="login">
+    <section class="login-brand">
+      <div class="login-brand-inner"><div class="crest" aria-hidden="true">M</div><h1>University<br>of Mirpur</h1></div>
+    </section>
+    <section class="login-form">
+      <form id="login-form">
+        <div id="login-notice" class="login-notice" role="status"></div>
+        <div class="field"><label for="login-id">ID</label><input id="login-id" name="id" autocomplete="username" placeholder="Enter your ID" required></div>
+        <div class="field"><label for="login-password">Password</label><input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required></div>
+        <button class="btn" type="submit">Login</button>
+        <div id="login-error" class="login-error" role="alert"></div>
+        <button class="btn light" id="show-password-setup" type="button">First time? Set your password</button>
+      </form>
+      <form id="password-setup-form" hidden>
+        <h2>Set your password</h2>
+        <p class="muted setup-help">For new students and teachers. Use the ID already added by your administrator.</p>
+        <div class="field"><label for="setup-id">Student / Teacher ID</label><input id="setup-id" name="id" autocomplete="username" placeholder="Enter your assigned ID" maxlength="60" required></div>
+        <div class="field"><label for="setup-password">New password</label><input id="setup-password" name="password" type="password" autocomplete="new-password" placeholder="At least 4 characters" minlength="4" maxlength="72" required></div>
+        <div class="field"><label for="setup-confirm">Confirm password</label><input id="setup-confirm" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Enter the same password again" minlength="4" maxlength="72" required></div>
+        <button class="btn" type="submit">Set password</button>
+        <div id="setup-error" class="login-error" role="alert"></div>
+        <button class="btn light" id="back-to-login" type="button">Back to login</button>
+      </form>
+    </section>
+  </main>
+  <script type="module" src="/js/Application.js"></script>
+</body>
+</html>
